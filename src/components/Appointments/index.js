@@ -62,7 +62,7 @@ class Appointments extends Component {
   }
 
   getFilteredAppointmentsList = () => {
-    const {appointmentsList, isFilterActive} = this.setState
+    const {appointmentsList, isFilterActive} = this.state
 
     if (isFilterActive) {
       return appointmentsList.filter(
