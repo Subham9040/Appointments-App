@@ -19,7 +19,7 @@ class Appointments extends Component {
     this.setState(prevState => ({
       appointmentsList: prevState.appointmentsList.map(eachAppointment => {
         if (id === eachAppointment.id) {
-          return {...eachAppointment, isStarted: !eachAppointment.isStarted}
+          return {...eachAppointment, isStarred: !eachAppointment.isStarred}
         }
         return eachAppointment
       }),
